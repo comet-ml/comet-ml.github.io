@@ -6,7 +6,7 @@ class Table {
    *
    * @param {Array<Object>} data - list of JSON objects (can include HTML elements)
    * @param {Array<string>} keys (optional) - array of titles to show, in order
-   * @param {Array<string>} headers (optional) - dictionary of header replacements
+   * @param {Object.<string, string>} headers (optional) - dictionary of header replacements
    * @param {string} id (optional) - id for HTML table element
    * @param {string} className (optional) - class for HTML table element
    *
@@ -35,7 +35,7 @@ class Table {
   /**
    * Generates an HTML table element and saves it in this.table
    *
-   * @param {Array<string>} headers - dictionary of header replacements
+   * @param {Object.<string, string>} headers - dictionary of header replacements
    * @param {string} id - id for HTML table element
    * @param {string} className - class for HTML table element
    *
@@ -97,7 +97,7 @@ class Table {
   }
 
   /**
-   * Utility funtion to give title case of headers
+   * Utility function to give title case of headers
    *
    * @param {string} text - heading of column
    *
